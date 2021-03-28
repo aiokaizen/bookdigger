@@ -1,0 +1,7 @@
+<h1>Books List</h1>
+
+<ul>
+    {% for book in queryset %}
+        <li><a href="{% url 'digger:book_details' book.id %}">{{ book }}</a></li>
+    {% endfor %}
+</ul>

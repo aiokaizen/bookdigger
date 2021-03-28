@@ -1,0 +1,12 @@
+<h1>{{ instance.title }}</h1>
+<span>by: {{ instance.author }}</span><br />
+<span>ISBN: {{ instance.isbn }}</span><br />
+<span>published at: {{ instance.publication_date }} by: {{ instance.publisher }}</span>
+<br />
+<br />
+<p>
+    {{ instance.description }}
+</p>
+
+
+<a href="{% url 'digger:book_list' %}">Back</a>

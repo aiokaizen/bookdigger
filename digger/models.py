@@ -5,7 +5,10 @@ from django.contrib.auth.models import User
 class Book(models.Model):
 
     title = models.CharField(verbose_name="Title", max_length=255)
-    isbn = models.CharField(verbose_name="ISBN", max_length=13, default='', blank=True)
+    isbn = models.CharField(
+        verbose_name="ISBN", max_length=13, default='', blank=True, 
+        help_text="10 or 13 characters based code."
+    )
     description = models.TextField()
     publication_date = models.DateField(null=True, blank=True)
     publisher = models.CharField(max_length=57, null=True, blank=True)

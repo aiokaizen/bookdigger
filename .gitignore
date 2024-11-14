@@ -2,4 +2,3 @@ venv/
 *.cmd
 tmp/
 *.pyc
-db.sqlite3
